@@ -1,0 +1,57 @@
+
+.first-fields {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.replace-text {
+  font-size: xx-large;
+}
+
+.replace-with {
+  font-size: xx-large;
+}
+
+.mat-form-field-infix {
+  width: 215px;
+}
+
+.form-field {
+  width: 200px;
+}
+
+.textarea-field {
+  width: 400px;
+  height: 100%;
+}
+
+.original-text {
+  font-size: xx-large;
+}
+.result-text {
+  font-size: xx-large;
+}
+
+.next-fields {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+}
+
+
+.actions {
+  display: flex;
+  justify-content: center;
+
+}
+
+.button {
+  width: 200px;
+  height: 100px;
+  font-size: xxx-large;
+}
+
+
+.result-area {
+  cursor: pointer;
+}

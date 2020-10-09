@@ -1,0 +1,38 @@
+
+.toolbar-spacer {
+  flex: 1 1 auto;
+}
+
+.home-title:hover {
+  cursor: pointer;
+  font-size: xxx-large;
+}
+
+.home-title {
+  font-size: xxx-large;
+}
+
+.navigation {
+  display: flex;
+}
+
+.icons {
+  font-size: 80px;
+}
+
+.left-icon {
+  padding-right: 80px;
+}
+
+
+.body{
+  :focus {outline:0 !important;}
+  min-width:600px;
+  min-height:400px;
+  max-height: 500px;
+}
+
+.toolbar-row {
+  height: 180px;
+  padding: 0 80px;
+}

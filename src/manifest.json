@@ -1,0 +1,9 @@
+{
+  "name": "File tools",
+  "version": "0.1",
+  "description": "Must have tools like find and replace and convert",
+  "manifest_version": 2,
+  "browser_action": {
+    "default_popup": "index.html"
+  }
+}

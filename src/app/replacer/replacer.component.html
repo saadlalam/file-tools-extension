@@ -1,0 +1,41 @@
+<body [formGroup]="replacerData" class="replacer-body">
+  <div class="first-fields">
+    <div class="replace-text">
+      <mat-form-field class="form-field">
+        <mat-label class="label">Find</mat-label>
+        <input matInput formControlName="textToFind">
+      </mat-form-field>
+    </div>
+    <div class="replace-with">
+      <mat-form-field class="form-field">
+        <mat-label class="label">Replace with</mat-label>
+        <input matInput formControlName="replaceWith">
+      </mat-form-field>
+    </div>
+  </div>
+
+  <mat-divider></mat-divider>
+
+
+  <div class="next-fields">
+    <div class="original-text">
+      <mat-form-field class="textarea-field">
+        <mat-label>Paste your content here</mat-label>
+        <textarea formControlName="originalText"  rows="10" cols="30" matInput></textarea>
+      </mat-form-field>
+    </div>
+    <mat-divider [vertical]="true"></mat-divider>
+    <div class="result-text">
+      <mat-form-field class="textarea-field">
+        <mat-label>Result</mat-label>
+        <textarea  class="result-area" matSuffix formControlName="resultText"  readonly rows="10" cols="30" matInput></textarea>
+      </mat-form-field>
+    </div>
+  </div>
+</body>
+
+<div class="actions">
+  <button class="button" (click)="triggerReplacer()" mat-raised-button color="primary">
+    GO
+  </button>
+</div>
