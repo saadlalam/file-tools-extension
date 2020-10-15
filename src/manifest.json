@@ -1,6 +1,7 @@
 {
   "name": "File tools",
   "version": "0.1",
+  "lang": "en",
   "description": "Must have tools like find and replace and convert",
   "manifest_version": 2,
   "browser_action": {
