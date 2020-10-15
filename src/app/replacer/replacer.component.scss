@@ -12,9 +12,7 @@
   font-size: xx-large;
 }
 
-.mat-form-field-infix {
-  width: 215px;
-}
+
 
 .form-field {
   width: 200px;
@@ -22,7 +20,7 @@
 
 .textarea-field {
   width: 400px;
-  height: 100%;
+  height: auto;
 }
 
 .original-text {
@@ -32,10 +30,8 @@
   font-size: xx-large;
 }
 
-.next-fields {
-  margin-top: 50px;
-  display: flex;
-  justify-content: space-around;
+.bottom-area {
+  padding-top: 30px;
 }
 
 
@@ -46,12 +42,24 @@
 }
 
 .button {
-  width: 200px;
-  height: 100px;
-  font-size: xxx-large;
+  width: 60px;
+  height: 50px;
+  font-size: large;
 }
 
 
-.result-area {
+.result-area:hover {
   cursor: pointer;
 }
+
+
+mat-form-field label {
+  font-size: 30px!important;
+}
+
+mat-form-field.mat-form-field-should-float label {
+  font-size: 20px;
+}
+
+.text-area { font-size: 20px;
+margin-top: 20px; }

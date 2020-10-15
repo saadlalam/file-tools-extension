@@ -27,12 +27,12 @@
 
 .body{
   :focus {outline:0 !important;}
-  min-width:600px;
+  min-width:800px;
   min-height:400px;
-  max-height: 500px;
+  max-height: fit-content;
 }
 
 .toolbar-row {
-  height: 180px;
+  height: 80px;
   padding: 0 80px;
 }

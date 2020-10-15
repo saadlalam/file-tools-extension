@@ -17,21 +17,30 @@
   <mat-divider></mat-divider>
 
 
-  <div class="next-fields">
-    <div class="original-text">
-      <mat-form-field class="textarea-field">
-        <mat-label>Paste your content here</mat-label>
-        <textarea formControlName="originalText"  rows="10" cols="30" matInput></textarea>
-      </mat-form-field>
-    </div>
-    <mat-divider [vertical]="true"></mat-divider>
-    <div class="result-text">
-      <mat-form-field class="textarea-field">
-        <mat-label>Result</mat-label>
-        <textarea  class="result-area" matSuffix formControlName="resultText"  readonly rows="10" cols="30" matInput></textarea>
-      </mat-form-field>
-    </div>
-  </div>
+
+<div class="bottom-area">
+  <mat-grid-list cols="2" rowHeight="2:1">
+    <mat-grid-tile>
+      <div class="text-area">
+        <mat-form-field class="textarea-field">
+          <mat-label *ngIf="!replacerData.controls.originalText.value">Paste your content here</mat-label>
+          <textarea formControlName="originalText"  rows="10" cols="5" matInput></textarea>
+        </mat-form-field>
+      </div>
+    </mat-grid-tile>
+
+    <mat-grid-tile>
+      <div class="text-area">
+        <mat-form-field class="textarea-field">
+          <mat-label *ngIf="!replacerData.controls.resultText.value">Result</mat-label>
+          <textarea formControlName="resultText"  rows="10" cols="5" matInput></textarea>
+        </mat-form-field>
+      </div>
+    </mat-grid-tile>
+  </mat-grid-list>
+</div>
+
+
 </body>
 
 <div class="actions">
